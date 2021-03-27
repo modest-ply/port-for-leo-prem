@@ -11,7 +11,7 @@ def html_page(page_name):
     return render_template(page_name)
 
 def write_csv(data):
-    with open(r'C:\Users\prem\vs-code\database.csv', mode='a') as databaser:
+    with open('./database.csv', mode='a') as databaser:
         email = data['email']
         subject = data['subject']
         message = data['message']
